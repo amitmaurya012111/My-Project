@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   background: var(--color-black);
-
   padding: 1rem 2rem;
 }
 
@@ -23,7 +22,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   list-style: none;
 }
 
@@ -51,6 +49,7 @@
   transition: 0.5s ease;
   font-family: var(--font-base);
 }
+
 .app__navbar-login a:hover {
   border-bottom: 1px solid var(--color-golden);
   color: var(--color-golden);
@@ -74,7 +73,6 @@
   height: 100vh;
   background: var(--color-black);
   transition: 0.5s ease;
-
   flex-direction: column;
   z-index: 5;
 }
@@ -83,7 +81,6 @@
   font-size: 27px;
   color: var(--color-golden);
   cursor: pointer;
-
   position: absolute;
   top: 20px;
   right: 20px;
@@ -102,23 +99,13 @@
   font-family: var(--font-base);
 }
 
-.app__navbar-smallscreen_links li :hover {
+.app__navbar-smallscreen_links li:hover {
   color: var(--color-golden);
 }
 
 @media screen and (max-width: 2000px) {
   .app__navbar-logo img {
     width: 210px;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  .app__navbar-links {
-    display: none;
-  }
-
-  .app__navbar-smallscreen {
-    display: flex;
   }
 }
 
@@ -134,4 +121,91 @@
   .app__navbar-logo img {
     width: 110px;
   }
+}
+
+@media screen and (max-width: 1100px) {
+  .app__navbar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app__navbar-links li {
+    margin: 10px 0;
+  }
+
+  .app__navbar-login {
+    display: none;
+  }
+}
+
+.app__navbar-links,
+.app__navbar-login {
+  z-index: 15;
+}
+
+.app__navbar-links li {
+  position: relative;
+}
+
+.download-options {
+  display: none;
+  position: absolute;
+  top: calc(100%);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #980707;
+  padding: 10px;
+  width: 300px; /* Increase the width value as per your requirement */
+  z-index: 10;
+}
+
+
+
+.app__navbar-links li:hover > .download-options,
+.download-options:hover,
+.download-options ul:hover {
+  display: block;
+}
+
+.download-options ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.download-options li {
+  margin-bottom: 8px;
+}
+
+.download-options a {
+  color: #333;
+  text-decoration: none;
+}
+
+.download-options a:hover {
+  color: #ff0000; /* Change the color to your desired hover color */
+}
+.sub-options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  background-color: #980707;
+  padding: 10px;
+  width: 300px;
+  z-index: 10;
+}
+
+.sub-options.right {
+  left: auto;
+  left: calc(85%);
+}
+
+.download-options:hover,
+.download-options ul:hover,
+.sub-options:hover {
+  display: block;
 }

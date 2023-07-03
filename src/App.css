@@ -9,7 +9,7 @@
 }
 
 .app__bg {
-  background: url("./assets/bg.png");
+  background: url("./assets/whitebackground.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -20,7 +20,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   min-height: 100vh;
 }
 
@@ -33,13 +32,22 @@
   flex-direction: column;
 }
 
+.app__wrapper_info_founder_message {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
 .app__wrapper_img {
   flex: 1;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: 2rem;
 }
 
@@ -90,15 +98,13 @@
 
 .headtext__cormorant {
   font-family: var(--font-base);
-  color: var(--color-golden);
+  color: #800000;
   font-size: 64px;
   line-height: 83.2px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-}
-
-.spoon__img {
-  width: 45px;
+  margin-right: 100px;
+  margin-top: -70px;
 }
 
 @media screen and (min-width: 2000px) {
@@ -116,10 +122,6 @@
   .headtext__cormorant {
     font-size: 150px;
     line-height: 210px;
-  }
-
-  .spoon__img {
-    width: 80px;
   }
 }
 

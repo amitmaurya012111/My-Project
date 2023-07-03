@@ -10,10 +10,29 @@ import { images } from "../../constants";
 import "./Gallery.css";
 
 const galleryImages = [
-  images.gallery01,
-  images.gallery02,
-  images.gallery03,
-  images.gallery04,
+  images.GalleryImage1,
+  images.GalleryImage2,
+  images.GalleryImage3,
+  images.GalleryImage4,
+  images.GalleryImage5,
+  images.GalleryImage6,
+  images.GalleryImage7,
+  images.GalleryImage8,
+  images.GalleryImage9,
+  images.GalleryImage10,
+  images.GalleryImage11,
+  images.GalleryImage12,
+  images.GalleryImage13,
+  images.GalleryImage14,
+  images.GalleryImage15,
+  images.GalleryImage16,
+  images.GalleryImage17,
+  images.GalleryImage18,
+  images.GalleryImage19,
+  images.GalleryImage20,
+  images.GalleryImage21,
+  images.GalleryImage22,
+  images.GalleryImage23,
 ];
 
 const Gallery = () => {
@@ -23,26 +42,20 @@ const Gallery = () => {
     const { current } = scrollRef;
 
     if (direction === "left") {
-      current.scrollLeft -= 300;
+      current.scrollLeft -= 500;
     } else {
-      current.scrollLeft += 300;
+      current.scrollLeft += 500;
     }
   };
 
   return (
-    <div className="app__gallery flex__center">
+    <div className="app__gallery flex__center" id="gallery">
       <div className="app__gallery-content">
-        <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">Photo Gallery</h1>
-        <p className="p__opensans" style={{ color: "#AAA", marginTop: "2rem" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-          mattis ipsum turpis elit elit scelerisque egestas mu.
-        </p>
-        <button type="button" className="custom__button">
-          View More
-        </button>
+            <h1 className="GalleryHeading">Media & Gallery</h1>
+            <button type="button" className="custom_Gallery_button">
+              View More
+            </button>
       </div>
-
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
           {galleryImages.map((image, index) => (
@@ -51,7 +64,6 @@ const Gallery = () => {
               key={`gallery_image-${index + 1}`}
             >
               <img src={image} alt="gallery" />
-              <BsInstagram className="gallery__image-icon" />
             </div>
           ))}
         </div>

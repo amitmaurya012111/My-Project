@@ -1,0 +1,104 @@
+.ProgramsImage1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProjectsAndProgramsTitle {
+  background-color: var(--color-black);
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.app_Info_Programs {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.Sankalp, .Sanrakshan, .Srijan {
+  background-color: rgb(52, 100, 245);
+  font-style: italic;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.Sankalp_Sanrakshan_Srijan {
+  background-color: var(--color-black);
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.SankalpKnowMore, .SanrakshanKnowMore, .SrijanKnowMore {
+  background-color: rgb(122, 148, 224);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 26px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .ProjectsAndProgramsTitle {
+    padding: 4rem 6rem;
+  }
+
+  .Sankalp_Sanrakshan_Srijan {
+    padding: 4rem 6rem;
+  }
+
+  .SankalpKnowMore, .SanrakshanKnowMore, .SrijanKnowMore {
+    font-size: 26px;
+    padding: 0.5rem 1.5rem;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ProgramsImage1 {
+    margin-left: 0;
+  }
+
+  .ProjectsAndProgramsTitle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Sankalp, .Sanrakshan, .Srijan {
+    margin-bottom: 10px;
+  }
+
+  .SankalpKnowMore, .SanrakshanKnowMore, .SrijanKnowMore {
+    font-size: 20px;
+    padding: 0.3rem 1rem;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .Sankalp_Sanrakshan_Srijan {
+    padding: 4rem 1rem;
+  }
+}

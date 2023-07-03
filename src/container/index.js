@@ -1,21 +1,19 @@
 import AboutUs from './AboutUs/AboutUs';
-import Chef from './Chef/Chef';
-import FindUs from './Findus/FindUs';
-import Footer from './Footer/Footer';
+import GoverningBody from './GoverningBody/GoverningBody';
+import Contact from './Contact/Contact';
+import ContactUsExtended from './ContactUsExtended/ContactUsExtended';
 import Gallery from './Gallery/Gallery';
 import Header from './Header/Header';
-import Intro from './Intro/Intro';
-import Laurels from './Laurels/Laurels';
-import SpecialMenu from './Menu/SpecialMenu';
+import Programs from './Programs/Programs';
+import AboveNavbar from './AboveNavbar/AboveNavbar';
 
 export {
   AboutUs,
-  Chef,
-  FindUs,
-  Footer,
+  GoverningBody,
+  Contact,
+  ContactUsExtended,
   Gallery,
   Header,
-  Intro,
-  Laurels,
-  SpecialMenu,
+  Programs,
+  AboveNavbar,
 };

@@ -1,0 +1,157 @@
+.GoverningBodyWrapper {
+  background: url("../../assets/whitebackground.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 6rem;
+}
+
+.ownerImageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ownerImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ownerCaptionWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.ownerCaption {
+  text-align: center;
+  font-family: var(--font-base);
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: rgb(54, 52, 52);
+}
+
+.GoverningBodyAppWrapperInfo {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 120px;
+  margin-bottom: 140px;
+}
+
+.headtext__cormorant_GB {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1fa5e3;
+  font-size: 34px;
+  line-height: 83.2px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.app__GB-content-GB {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.app__GB-content-GB_quote {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.p__GB1 {
+  font-family: var(--font-alt);
+  color: var(--color-black);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+  margin-top: -80px;
+}
+
+.p__GB2 {
+  font-family: var(--font-alt);
+  color: var(--color-black);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.app__GB-sign {
+  width: 100%;
+  margin-top: 0rem;
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+  color: var(--color-golden);
+}
+
+.KnowMoreButton{
+  background-color: rgb(122, 148, 224);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 26px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+.BoardOFMembersButton{
+  background-color: rgb(122, 148, 224);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 26px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.founderLink {
+  color: blue;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .GoverningBodyWrapper {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .ownerImageWrapper, .ownerCaptionWrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,195 @@
+.ContactUsExtendedWrapper {
+    background-color: #800000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 105vh;
+    padding: 4rem 6rem;
+}
+
+.ContactUsExtendedAppWrapperInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 140px;
+}
+
+.officeWrapper {
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+.headingWrapper {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.headtext {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-size: 34px;
+    line-height: 83.2px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+.app__GB-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.app__GB-content_quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 40px;
+}
+
+.p__GB1-ContactUsExended {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: large;
+}
+.label-1{
+    font-weight: bold;
+    font-size: large;
+    color: #ccc;
+}
+.p__GB1-ContactUsExended::before {
+    content: none;
+}
+
+.inputContainer {
+    width: 300px;
+    font-family: var(--font-alt);
+    color: var(--color-black);
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-alt);
+    font-size: 16px;
+    color: var(--color-black);
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: #1fa5e3;
+    box-shadow: 0 0 0 2px rgba(31, 165, 227, 0.3);
+}
+
+.sendButton {
+    background-color: #1fa5e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-alt);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.sendButton:hover {
+    background-color: #0b8dd1;
+}
+
+.fa-lg {
+    font-size: 24px;
+    /* Adjust the size as needed */
+}
+
+.p__GB1-ContactUsExended .value a {
+    color: #1fa5e3;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.p__GB1-ContactUsExended .value a:hover {
+    color: #0b8dd1;
+}
+
+.footerStrip {
+    background-color: #202121;
+    height: 2.5cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    margin-top: 100px;
+    width: 120%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footerLinks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px; /* Add this line */
+}
+
+.footerLinks a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px; /* Adjust the margin as needed */
+}
+
+.footerLinks span {
+    color: #fff;
+}
+
+.footerStrip .copyright {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+@media screen and (max-width: 1024px) {
+    .ContactUsExtendedWrapper {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .ContactUsExtendedAppWrapperInfo {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .officeWrapper {
+        width: 100%;
+        margin-right: 0;
+    }
+}

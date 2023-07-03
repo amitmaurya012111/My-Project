@@ -1,0 +1,138 @@
+.ContactWrapper {
+  background: url("../../assets/whitebackground.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 4rem 6rem;
+}
+
+.MapImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ContactAppWrapperInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: calc(100% - 300px);
+  margin-bottom: 140px;
+}
+
+.officeContactWrapper {
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.headingContactWrapper {
+  margin-bottom: 40px;
+}
+
+.ContactHeadtext {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1fa5e3;
+  font-size: 34px;
+  line-height: 83.2px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.app__GB-contentContact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.MembershipQuote{
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: rgb(52, 100, 245);
+  padding-top: 30px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #800000;
+}
+
+.MembershipButton{
+  background-color: rgb(122, 148, 224);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 26px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  margin-right: 30px;
+}
+
+.app__GB-content_quoteContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+
+.p__GB1-Contact {
+  font-family: var(--font-alt);
+  color: var(--color-black);
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.label-Contact {
+  font-weight: bold;
+}
+
+.p__GB1-Contact::before {
+  content: "\2022"; /* Bullet point */
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.p__GB2 {
+  font-family: var(--font-alt);
+  color: var(--color-black);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .ContactWrapper {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .ContactAppWrapperInfo {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .officeWrapper {
+    width: 100%;
+    margin-right: 0;
+  }
+}
